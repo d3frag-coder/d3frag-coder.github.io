@@ -6,6 +6,8 @@
         <meta name="author" content="Aleksey">
         <meta name="robots" content="all">
         <title>Алексей Илдаркин - Веб-разработчик</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
@@ -33,14 +35,19 @@
         </div>
         <div class="about">
             <h2>Обо мне</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aperiam voluptas tenetur provident tempore esse enim nihil facilis nobis excepturi quidem sunt, sit sapiente itaque deleniti in sequi quia quasi corporis, fugiat magni.</span>
+            <div class="border_top"></div>
+            <div class="image_boy">
+                <img src="img/boy.png" alt="Какой-то парень">
+            </div>
+            <div class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nulla ipsam, iure fuga cum alias, nesciunt nam, debitis sed expedita vero. Beatae eos, maiores modi sunt ipsa et?</div>
             <br>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aperiam voluptas tenetur provident tempore esse enim nihil facilis nobis excepturi quidem sunt, sit sapiente itaque deleniti in sequi quia quasi corporis, fugiat magni.</span>
+            <div class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nulla ipsam, iure fuga cum alias, nesciunt nam, debitis sed expedita vero. Beatae eos, maiores modi sunt ipsa et?</div>
             <br>
             <input type="submit" value="Скачать резюме">
         </div>
         <div class="know">
             <h2>Что я умею</h2>
+            <div class="border_top"></div>
             <div class="container">
                 <div class="sign_one">
                     <img src="img/laptop.png" alt="image laptop">
@@ -66,63 +73,71 @@
         </div>
         <div class="case">
             <h2>Кейсы</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam ea mollitia voluptatum dignissimos itaque ut sed alias.</span>
+            <div class="border_top"></div>
             <div class="container_case">
-                <div class="container_left">
-                    <h3>Client:</h3>
-                    <span>Какая-то компания</span>
-                    <br>
-                    <h3>Website:</h3>
-                    <span>http://www.somedomain.com</span>
-                </div>
-                <div class="container_right">
-                    <h3>Название проекта</h3>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam natus modi, quam cupiditate iure est illo ab voluptas animi vero dolore at, iusto atque laboriosam quos eligendi! Est autem rerum adipisci dolorem architecto atque aspernatur sit repellendus nobis commodi quos accusamus voluptates, quasi blanditiis, incidunt molestiae magni. Consectetur, expedita numquam!</span>
-                </div>
-            </div>
-            <input type="submit" value="Visit live site">
-        </div>
-        <div class="price">
-            <h2><b>Расчет стоимости</b></h2>
-            <div class="container_price">
-                <div class="type_site">
-                    <h2>Тип сайта</h2>
-                    <select name="list1" id="list">
-                        <option value="opt1">Option 1</option>
-                        <option value="opt1">Option 2</option>
-                        <option value="opt1">Option 3</option>
-                    </select>
-                </div>
-                <div class="design">
-                    <h2>Дизайн</h2>
-                    <select name="list2" id="list">
-                        <option value="opt1">Option 1</option>
-                        <option value="opt1">Option 2</option>
-                        <option value="opt1">Option 3</option>
-                    </select>
-                </div>
-                <div class="adaptability">
-                    <h2>Адаптивность</h2>
-                    <select name="list3" id="list">
-                        <option value="opt1">Option 1</option>
-                        <option value="opt1">Option 2</option>
-                        <option value="opt1">Option 3</option>
-                    </select>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam ea mollitia voluptatum dignissimos itaque ut sed alias.</span>
+                <img src="img/photo.png" alt="Какое-то фото">
+                <div class="container_bottom">
+                    <div class="container_left">
+                        <h3>Client:</h3>
+                        <span>Какая-то компания</span>
+                        <br>
+                        <h3>Website:</h3>
+                        <span>http://www.somedomain.com</span>
+                    </div>
+                    <div class="container_right">
+                        <h3>Название проекта</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam natus modi, quam cupiditate iure est illo ab voluptas animi vero dolore at, iusto atque laboriosam quos eligendi! Est autem rerum adipisci dolorem architecto atque aspernatur sit repellendus nobis commodi quos accusamus voluptates, quasi blanditiis, incidunt molestiae magni. Consectetur, expedita numquam!</span>
+                    </div>
+                    <div class="container_button">
+                        <input type="submit" value="Visit live site">
+                    </div>
                 </div>
             </div>
-            <div class="example_price">
-                <div class="example_deadline">
-                    <div class="example_text">Сроки</div>
-                    <div class="example_number">0</div>
-                </div>
-                <div class="example_cost">
-                    <div class="example_text">Стоимость</div>
-                    <div class="example_number">0</div>
+            <div class="price">
+                <h3>Расчет стоимости</h3>
+                <div class="container_price">
+                    <div class="type_site">
+                        <h4>Тип сайта</h4>
+                        <select name="list1" id="list">
+                            <option value="opt1">Option 1</option>
+                            <option value="opt2">Option 2</option>
+                            <option value="opt3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="design">
+                        <h4>Дизайн</h4>
+                        <select name="list2" id="list">
+                            <option value="opt1">Option 1</option>
+                            <option value="opt2">Option 2</option>
+                            <option value="opt3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="adaptability">
+                        <h4>Адаптивность</h4>
+                        <select name="list3" id="list">
+                            <option value="opt1">Option 1</option>
+                            <option value="opt2">Option 2</option>
+                            <option value="opt3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="border_bottom"></div>
+                    <div class="example_price">
+                        <div class="example_deadline">
+                            <div class="example_text">Сроки</div>
+                            <div class="example_number">0</div>
+                        </div>
+                        <div class="example_cost">
+                            <div class="example_text">Стоимость</div>
+                            <div class="example_number">0</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="statistics">
             <h2>Немного статистики</h2>
+            <div class="border_top"></div>
             <div class="container_s">
                 <div class="sign_s_one">
                     <img src="img/smile.png" alt="image smile">
@@ -148,19 +163,38 @@
         </div>
         <div class="reviews">
             <h2>Отзывы</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus quasi aspernatur! Nesciunt veritatis maxime laborum mollitia voluptas facilis facere reprehenderit accusamus iste, quod quibusdam ratione temporibus quos ullam quis minus.</span>
-            <br>
-            <span>Михаил, Ген директор ПАО"Газпром".</span>
+            <div class="border_top"></div>
+            <img src="img/boy_2.png" alt="Какой-то парень">
+            <div class="container_reviews">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus quasi aspernatur! Nesciunt veritatis maxime laborum mollitia voluptas facilis facere reprehenderit accusamus iste, quod quibusdam ratione temporibus quos ullam quis minus.</span>
+                <br>
+                <div class="boy_2_r">Михаил, Ген директор ПАО"Газпром".</div>
+            </div>
         </div>
         <div class="contacts">
             <h2>Мои контакты</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae labore saepe, illo id quos laborum.</span>
-            <h3>Оставьте мне сообщение</h3>
-            <input type="text" placeholder="Имя">
-            <input type="email" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-            <input type="submit" value="Отправить">
+            <div class="border_top"></div>
+            <div class="container_cont">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae labore saepe, illo id quos laborum.</span>
+                <div class="cont_img">
+                    <div class="img_c">
+                        <img src="img/geo.png" alt="image geo">
+                    </div>
+                    <div class="img_c">
+                        <img src="img/mms.png" alt="image mms">
+                    </div>
+                    <div class="img_c">
+                        <img src="img/phone.png" alt="image phone">
+                    </div>
+                </div>
+                <h3>Оставьте мне сообщение</h3>
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Email">
+                <textarea name="name1" id="1" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <input type="submit" value="Отправить">
+            </div>
         </div>
+        <div class="map"></div>
         <footer>
             <span>Copyright 2021 Алексей Илдаркин. Design by Web</span>
         </footer>

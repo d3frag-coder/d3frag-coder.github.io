@@ -551,3 +551,9 @@ footer {
         margin-left: 404px;
     }
 }
+
+@media (max-width: 1709px) {
+    .menu {
+        padding-left: 354px;
+    }
+}

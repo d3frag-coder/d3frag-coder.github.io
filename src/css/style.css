@@ -202,6 +202,7 @@ main {
     margin-top: 20px;
 }
 .price {
+    margin: 0 auto;
     padding-top: 200px;
     text-align: center;
 }
@@ -214,7 +215,6 @@ main {
     font-size: 26px;
 }
 .container_price {
-    margin-bottom: 115px;
     padding: 55px 30% 0px 30%;
     text-align: start;
 }
@@ -242,6 +242,15 @@ select {
 .example_number {
     float: right;
     font-weight: bold;
+    font-size: 16px;
+}
+.price input {
+    margin: 40px auto;
+    background-color: #63b5ae;
+    color: #fff;
+    border: 2px solid #63b5ae;
+    border-radius: 5px;
+    padding: 9px 29px;
     font-size: 16px;
 }
 
@@ -420,6 +429,21 @@ footer {
     color: #fff;
 }
 .container_button input:active {
+    transform: scale(1.1);
+}
+
+.price input {
+    transition: all 0.2s;
+    transform: scale(1);
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+.price input:hover {
+    background-color: #58a29c;
+    color: #fff;
+}
+.price input:active {
     transform: scale(1.1);
 }
 

@@ -203,20 +203,23 @@ main {
 }
 .price {
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 100px;
     text-align: center;
 }
 .price h3 {
     font-size: 32px;
     font-weight: bold;
+    text-align: center;
 }
 .price h4 {
     text-transform: uppercase;
     font-size: 26px;
 }
 .container_price {
-    padding: 55px 30% 0px 30%;
+    margin: 0 auto;
     text-align: start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 750px;
 }
 .type_site, .design, .adaptability {
     padding-bottom: 50px;
@@ -244,7 +247,7 @@ select {
     font-weight: bold;
     font-size: 16px;
 }
-.price input {
+.container_price input {
     margin: 40px auto;
     background-color: #63b5ae;
     color: #fff;

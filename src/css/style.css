@@ -210,6 +210,7 @@ main {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 5%;
 }
 .price h4 {
     text-transform: uppercase;
@@ -220,13 +221,14 @@ main {
     text-align: start;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 750px;
+    padding: 2%;
 }
 .type_site, .design, .adaptability {
     padding-bottom: 50px;
 }
 select {
     margin-top: 20px;
-    padding: 23px 600px 23px 24px;
+    padding: 23px 76% 23px 24px;
     background-color: #eee;
     font-weight: bold;
 }
@@ -255,6 +257,7 @@ select {
     border-radius: 5px;
     padding: 9px 29px;
     font-size: 16px;
+    display: flex;
 }
 
 .statistics {

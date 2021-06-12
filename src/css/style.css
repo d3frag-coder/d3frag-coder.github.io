@@ -169,7 +169,7 @@ main {
     display: block;
     margin: 0 auto;
     width: 75%;
-    max-width: 750px;
+    max-width: 1000px;
 }
 .container_bottom {
     padding-top: 46px;
@@ -226,6 +226,8 @@ main {
 }
 .type_site, .design, .adaptability {
     padding-bottom: 50px;
+    width: 90%;
+    margin: 0 auto;
 }
 select {
     margin-top: 20px;
@@ -282,9 +284,7 @@ select {
 }
 .sign_s_one, .sign_s_two, .sign_s_three, .sign_s_four {
     float: left;
-}
-.sign_s_two, .sign_s_three, .sign_s_four {
-    margin-left: 183px;
+    flex: 0 1 400px;
 }
 .sign_number {
     font-size: 35px;
@@ -515,7 +515,27 @@ footer {
 }
 @media (max-width: 750px) {
     select {
-        padding: 23px 24px;
+        padding: 23px;
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .price input {
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+    .sign_s_one, .sign_s_two, .sign_s_three, .sign_s_four {
+        margin-bottom: 40px;
+    }
+    .container_bottom {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 46px 0px 0px 0px;
+        text-align: center;
+    }
+    .container_left {
+        margin-right: 0;
     }
 }
 

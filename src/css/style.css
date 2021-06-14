@@ -529,6 +529,7 @@ footer {
         position: relative;
         float: right;
         margin-right: 5px;
+        line-height: 60px;
     }
     .dropbtn {
         background: #233548;

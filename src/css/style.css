@@ -6,6 +6,7 @@ nav {
     height: 60px;
     background: #344051;
     position: fixed;
+    z-index: 1;
 }
 h2 {
     padding-top: 109px;
@@ -327,13 +328,14 @@ select {
     padding: 31px 23% 0px 23%;
 }
 .cont_img {
-    float: left;
-    padding: 45px 0% 0px 15%;
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .img_c {
-    float: left;
-    padding-right: 144px;
     padding-bottom: 40px;
+    flex: 0 1 342px;
 }
 .cont_img img {
     padding-bottom: 15px;

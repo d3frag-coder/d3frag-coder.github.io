@@ -359,6 +359,7 @@ select {
     background-color: #d4d8de;
     padding: 10px 13px 13px 13px;
     font-weight: bold;
+    width: 48%;
 }
 [custom_data="mail"] {
     border: 1px solid #d4d8de;
@@ -366,6 +367,7 @@ select {
     background-color: #d4d8de;
     padding: 10px 13px 13px 13px;
     font-weight: bold;
+    width: 48%;
 }
 textarea {
     padding: 9px 12px 0px 12px;
@@ -594,6 +596,12 @@ footer {
     }
     .container_left {
         margin-right: 0;
+    }
+    [custom_data="name"] {
+        width: 100%;
+    }
+    [custom_data="mail"] {
+        width: 100%;
     }
 }
 

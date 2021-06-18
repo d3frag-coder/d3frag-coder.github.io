@@ -6,7 +6,7 @@ nav {
     height: 60px;
     background: #344051;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
 }
 h2 {
     padding-top: 109px;
@@ -52,12 +52,18 @@ main {
     width: 100%;
     height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url("../img/bg.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .title__container {
     float: left;
-    margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    flex: 0 0 auto;
+    width: 74%;
+    margin-top: 13rem;
+    margin-right: auto;
     opacity: 0;
     -webkit-animation: titlemove 1s ease forwards;
     -o-animation: titlemove 1s ease forwards;
@@ -520,7 +526,33 @@ footer {
     display: none;
     text-align: center;
 }
-@media (max-width: 750px) {
+@media (max-width: 991px) {
+    .title__container, .title__container h4, .title__container input {
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    .title__container {
+        width: 100%;
+    }
+    .title__container input {
+        border: 2px solid #fff;
+    }
+    .main {
+        position: relative;
+    }
+    .main::after {
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media (max-width: 991px) {
     .menu {
         display: none;
     }
@@ -684,6 +716,6 @@ footer {
     }
     to {
         opacity: 1;
-        margin-left: 404px;
+        margin-left: 0px;
     }
 }

@@ -343,37 +343,38 @@ select {
 .geo {
     padding-bottom: 5px;
 }
+.contacts_container_input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .container_cont h3 {
     text-transform: uppercase;
     font-size: 18px;
     padding-bottom: 40px;
 }
 [custom_data="name"] {
-    margin-right: 37px;
     border: 1px solid #d4d8de;
     background: none;
     background-color: #d4d8de;
-    float: left;
-    padding: 10px 311px 13px 13px;
+    padding: 10px 13px 13px 13px;
     font-weight: bold;
 }
 [custom_data="mail"] {
     border: 1px solid #d4d8de;
     background: none;
     background-color: #d4d8de;
-    float: left;
-    padding: 10px 311px 13px 13px;
+    padding: 10px 13px 13px 13px;
     font-weight: bold;
 }
 textarea {
-    float: left;
-    padding: 9px 789px 0px 12px;
+    padding: 9px 12px 0px 12px;
     margin-top: 14px;
     background-color: #d4d8de;
     font-weight: bold;
 }
 [custom_data="buttom"] {
-    margin-top: 18px;
+    margin: 18px auto;
     border: 2px solid #fff;
     border-radius: 5px;
     color: #fff;

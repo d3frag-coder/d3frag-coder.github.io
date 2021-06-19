@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <script src="js/main.js"></script>
-        <script src="js/homework.js"></script>
     </head>
     <body onload="myFunction()">
         <div id="loader"></div>
@@ -22,23 +21,23 @@
                 <div class="logo">Алексей Илдаркин</div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Кейсы</a></li>
-                        <li><a href="#">Прайс</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#know">Услуги</a></li>
+                        <li><a href="#case">Кейсы</a></li>
+                        <li><a href="#price">Прайс</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Навигация</button>
                     <div class="dropdown-content">
-                        <a href="#">Обо мне</a>
-                        <a href="#">Услуги</a>
-                        <a href="#">Кейсы</a>
-                        <a href="#">Прайс</a>
-                        <a href="#">Отзывы</a>
-                        <a href="#">Контакты</a>
+                        <a href="#about">Обо мне</a>
+                        <a href="#know">Услуги</a>
+                        <a href="#case">Кейсы</a>
+                        <a href="#price">Прайс</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#contacts">Контакты</a>
                     </div>
                 </div>
             </nav>
@@ -52,7 +51,7 @@
                     <input type="button" value="Мои работы">
                 </div>
             </section>
-            <div class="about">
+            <div class="about" id="about">
                 <h2>Обо мне</h2>
                 <div class="border_top"></div>
                 <div class="image_boy">
@@ -64,7 +63,7 @@
                 <br>
                 <input type="submit" value="Скачать резюме">
             </div>
-            <div class="know">
+            <div class="know" id="know">
                 <h2>Что я умею</h2>
                 <div class="border_top"></div>
                 <div class="container">
@@ -90,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="case">
+            <div class="case" id="case">
                 <h2>Кейсы</h2>
                 <div class="border_top"></div>
                 <div class="container_case">
@@ -114,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="price">
+            <div class="price" id="price">
                 <div class="container_price">
                     <h3>Расчет стоимости</h3>
                     <div class="type_site">
@@ -160,7 +159,7 @@
                     <input type="submit" value="Оставить заявку">
                 </div>
             </div>
-            <div class="statistics">
+            <div class="statistics" id="statistics">
                 <h2>Немного статистики</h2>
                 <div class="border_top"></div>
                 <div class="container_s">
@@ -186,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews">
+            <div class="reviews" id="reviews">
                 <h2>Отзывы</h2>
                 <div class="border_top"></div>
                 <div class="container_rev">
@@ -200,7 +199,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contacts">
+            <div class="contacts" id="contacts">
                 <h2>Мои контакты</h2>
                 <div class="border_top"></div>
                 <div class="container_cont">
@@ -239,5 +238,7 @@
             </footer>
         </main>
         </div>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/homework.js"></script>
     </body>
 </html>

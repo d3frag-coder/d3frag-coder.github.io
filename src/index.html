@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/magnific-popup.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/jackmoore/colorbox/master/example1/colorbox.css">
+        <link rel="stylesheet" href="css/fotorama.css">
         <script src="js/main.js"></script>
     </head>
     <body onload="myFunction()">
@@ -95,7 +96,7 @@
                 <div class="border_top"></div>
                 <div class="container_case">
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam ea mollitia voluptatum dignissimos itaque ut sed alias.</span>
-                    <img src="img/photo.png" alt="Какое-то фото">
+                    <img class="image-link" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
                     <div class="container_bottom">
                         <div class="container_left">
                             <h3>Client:</h3>
@@ -119,42 +120,42 @@
                     <h3>Расчет стоимости</h3>
                     <div class="type_site">
                         <h4>Тип сайта</h4>
-                        <select name="list1" id="list">
+                        <select onchange="calc()" name="list1" id="type_site">
                             <option selected disabled>Выберете пункт...</option>
-                            <option value="opt1">Option 1</option>
-                            <option value="opt2">Option 2</option>
-                            <option value="opt3">Option 3</option>
+                            <option value="25000">Сайт-Визитка</option>
+                            <option value="175000">Промо-Сайт</option>
+                            <option value="180000">Интернет-Магазин</option>
                         </select>
                     </div>
                     <div class="design">
                         <h4>Дизайн</h4>
-                        <select name="list2" id="list">
+                        <select onchange="calc()" name="list2" id="design">
                             <option selected disabled>Выберете пункт...</option>
-                            <option value="opt1">Option 1</option>
-                            <option value="opt2">Option 2</option>
-                            <option value="opt3">Option 3</option>
+                            <option value="5000">Легкий Дизайн</option>
+                            <option value="15000">Сложный Дизайн</option>
+                            <option value="0">Свое(Вы предоставляете дизайн)</option>
                         </select>
                     </div>
                     <div class="adaptability">
                         <h4>Адаптивность</h4>
-                        <select name="list3" id="list">
+                        <select onchange="calc()" name="list3" id="adaptability">
                             <option selected disabled>Выберете пункт...</option>
-                            <option value="opt1">Option 1</option>
-                            <option value="opt2">Option 2</option>
-                            <option value="opt3">Option 3</option>
+                            <option value="10000">Только для Mobile</option>
+                            <option value="10000">Только для PC</option>
+                            <option value="25000">Для PC и Mobile</option>
                         </select>
                     </div>
                     <div class="border_bottom"></div>
                     <div class="example_price">
                         <div class="example_deadline">
                             <div class="example_text">Сроки</div>
-                            <div class="example_number">0</div>
+                            <div class="example_number"><span id="resultdeadline">0</span></div>
                         </div>
                         <br>
                         <br>
                         <div class="example_cost">
                             <div class="example_text">Стоимость</div>
-                            <div class="example_number">0</div>
+                            <div class="example_number"><span id="result">0</span></div>
                         </div>
                     </div>
                     <input type="submit" value="Оставить заявку">
@@ -190,13 +191,37 @@
                 <h2>Отзывы</h2>
                 <div class="border_top"></div>
                 <div class="container_rev">
-                    <div class="animate__animated animate__fadeInLeftBig animate__delay-2s">
-                        <img src="img/boy_2.png" alt="Какой-то парень">
-                    </div>
-                    <div class="container_reviews animate__animated animate__fadeInLeftBig animate__delay-2s">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus quasi aspernatur! Nesciunt veritatis maxime laborum mollitia voluptas facilis facere reprehenderit accusamus iste, quod quibusdam ratione temporibus quos ullam quis minus.</span>
-                        <br>
-                        <div class="boy_2_r">Михаил, Ген директор ПАО"Газпром".</div>
+                    <div class="fotorama" data-height="450" data-width="450">
+                        <div class="ft-1">
+                            <div>
+                                <img src="img/boy_2.png" alt="Какой-то парень">
+                            </div>
+                            <div class="container_reviews">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus quasi aspernatur! Nesciunt veritatis maxime laborum mollitia voluptas facilis facere reprehenderit accusamus iste, quod quibusdam ratione temporibus quos ullam quis minus.</span>
+                                <br>
+                                <div class="boy_2_r">Михаил, Ген директор ПАО"Газпром".</div>
+                            </div>
+                        </div>
+                        <div class="ft-2">
+                            <div>
+                                <img src="img/boy_2.png" alt="Какой-то парень">
+                            </div>
+                            <div class="container_reviews">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus quasi aspernatur! Nesciunt veritatis maxime laborum mollitia voluptas facilis facere reprehenderit accusamus iste, quod quibusdam ratione temporibus quos ullam quis minus.</span>
+                                <br>
+                                <div class="boy_2_r">Михаил, Ген директор ПАО"Газпром".</div>
+                            </div>
+                        </div>
+                        <div class="ft-3">
+                            <div>
+                                <img src="img/boy_2.png" alt="Какой-то парень">
+                            </div>
+                            <div class="container_reviews">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus quasi aspernatur! Nesciunt veritatis maxime laborum mollitia voluptas facilis facere reprehenderit accusamus iste, quod quibusdam ratione temporibus quos ullam quis minus.</span>
+                                <br>
+                                <div class="boy_2_r">Михаил, Ген директор ПАО"Газпром".</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,7 +265,9 @@
         </main>
         </div>
         <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script> 
+        <script src="js/fotorama.js"></script>
         <script src="js/homework.js"></script>
+        <script src="js/price.js"></script>
     </body>
 </html>

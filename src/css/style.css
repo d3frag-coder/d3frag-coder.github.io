@@ -15,13 +15,6 @@ h2 {
     font-size: 25px;
     font-weight: bold;
 }
-h5 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 15px;
-}
 main {
     width: 100%;
     height: 100%;
@@ -249,9 +242,10 @@ main {
 }
 select {
     margin-top: 20px;
-    padding: 23px 76% 23px 24px;
+    padding: 23px 5% 23px 5%;
     background-color: #eee;
     font-weight: bold;
+    width: 100%
 }
 .border_bottom {
     border: 2px solid #d1d1d1;
@@ -324,7 +318,7 @@ select {
 }
 .container_reviews {
     padding-top: 35px;
-    padding: 35px 35% 0px 35%;
+    padding: 35px 25% 0px 25%;
     line-height: 18px;
 }
 .boy_2_r {
@@ -559,7 +553,7 @@ footer {
     }
 }
 
-@media (max-width: 991 px) {
+@media (max-width: 991px) {
     .menu {
         display: none;
     }

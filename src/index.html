@@ -8,11 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Алексей Илдаркин - Веб-разработчик</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jackmoore/colorbox/master/example1/colorbox.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/magnific-popup.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet" href="css/fotorama.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/main.js"></script>
     </head>
     <body onload="myFunction()">
@@ -53,7 +56,7 @@
                     <input type="button" value="Мои работы">
                 </div>
             </section>
-            <div class="about" id="about">
+            <div class="about element-animation" id="about">
                 <h2>Обо мне</h2>
                 <div class="border_top"></div>
                 <div class="image_boy">
@@ -65,7 +68,7 @@
                 <br>
                 <input type="submit" value="Скачать резюме">
             </div>
-            <div class="know" id="know">
+            <div class="know element-animation" id="know">
                 <h2>Что я умею</h2>
                 <div class="border_top"></div>
                 <div class="container">
@@ -91,12 +94,20 @@
                     </div>
                 </div>
             </div>
-            <div class="case" id="case">
+            <div class="case element-animation" id="case">
                 <h2>Кейсы</h2>
                 <div class="border_top"></div>
                 <div class="container_case">
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam ea mollitia voluptatum dignissimos itaque ut sed alias.</span>
-                    <img class="image-link" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
+                    <div>
+                        <button class="slick-prev slick-arrow" aria-label="Предыдущий"></button>
+                        <div class="single-item">
+                            <img class="image-link" data-lazy="img/photo.png" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
+                            <img class="image-link" data-lazy="img/photo.png" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
+                            <img class="image-link" data-lazy="img/photo.png" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
+                        </div>
+                        <button class="slick-next slick-arrow" aria-label="Следующий"></button>
+                    </div>
                     <div class="container_bottom">
                         <div class="container_left">
                             <h3>Client:</h3>
@@ -115,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="price" id="price">
+            <div class="price element-animation" id="price">
                 <div class="container_price">
                     <h3>Расчет стоимости</h3>
                     <div class="type_site">
@@ -161,33 +172,33 @@
                     <input type="submit" value="Оставить заявку">
                 </div>
             </div>
-            <div class="statistics" id="statistics">
+            <div class="statistics element-animation" id="statistics">
                 <h2>Немного статистики</h2>
                 <div class="border_top"></div>
-                <div class="container_s">
+                <div class="container_s" data-aos="fade-up" data-aos-duration="3000">
                     <div class="sign_s_one">
                         <img src="img/smile.png" alt="image smile">
-                        <div class="sign_number"><b>120</b></div>
+                        <div class="sign_number lines" data-count="120"><b>120</b></div>
                         <h4>Счастливых клиентов</h4>
                     </div>
                     <div class="sign_s_two">
                         <img src="img/code-s.png" alt="image code sign">
-                        <div class="sign_number"><b>4,600</b></div>
+                        <div class="sign_number lines" data-count="4600"><b>4,600</b></div>
                         <h4>Часов работы</h4>
                     </div>
                     <div class="sign_s_three">
                         <img src="img/tick.png" alt="image tick">
-                        <div class="sign_number"><b>340</b></div>
+                        <div class="sign_number lines" data-count="340"><b>340</b></div>
                         <h4>Проектов завершено</h4>
                     </div>
                     <div class="sign_s_four">
                         <img src="img/trophy.png" alt="image trophy">
-                        <div class="sign_number"><b>23</b></div>
+                        <div class="sign_number lines" data-count="23"><b>23</b></div>
                         <h4>Наград получено</h4>
                     </div>
                 </div>
             </div>
-            <div class="reviews" id="reviews">
+            <div class="reviews element-animation" id="reviews">
                 <h2>Отзывы</h2>
                 <div class="border_top"></div>
                 <div class="container_rev">
@@ -225,7 +236,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contacts" id="contacts">
+            <div class="contacts element-animation" id="contacts">
                 <h2>Мои контакты</h2>
                 <div class="border_top"></div>
                 <div class="container_cont">
@@ -266,7 +277,11 @@
         </div>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script> 
+        <script src="https://aishek.github.io/jquery-animateNumber/javascripts/jquery.animateNumber.js"></script>
+        <script src="https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/fotorama.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="js/homework.js"></script>
         <script src="js/price.js"></script>
     </body>

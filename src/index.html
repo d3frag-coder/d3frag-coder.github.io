@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/jackmoore/colorbox/master/example1/colorbox.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/magnific-popup.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -94,20 +94,34 @@
                     </div>
                 </div>
             </div>
-            <div class="case element-animation" id="case">
+
+            <!-- СЛАЙДЕР -->
+            <section class="case element-animation" id="case">
                 <h2>Кейсы</h2>
                 <div class="border_top"></div>
                 <div class="container_case">
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam ea mollitia voluptatum dignissimos itaque ut sed alias.</span>
-                    <div>
-                        <button class="slick-prev slick-arrow" aria-label="Предыдущий"></button>
-                        <div class="single-item">
-                            <img class="image-link" data-lazy="img/photo.png" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
-                            <img class="image-link" data-lazy="img/photo.png" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
-                            <img class="image-link" data-lazy="img/photo.png" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
+
+                    <div class="mySwiper swiper-container">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="image-link" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="image-link" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="image-link" src="img/photo.png" href="img/photo.png" alt="Какое-то фото">
+                            </div>
                         </div>
-                        <button class="slick-next slick-arrow" aria-label="Следующий"></button>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
                     </div>
+
                     <div class="container_bottom">
                         <div class="container_left">
                             <h3>Client:</h3>
@@ -125,14 +139,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- КАЛЬКУЛЯТОР -->
             <div class="price element-animation" id="price">
                 <div class="container_price">
                     <h3>Расчет стоимости</h3>
                     <div class="type_site">
                         <h4>Тип сайта</h4>
                         <select onchange="calc()" name="list1" id="type_site">
-                            <option selected disabled>Выберете пункт...</option>
+                            <option value="0" selected disabled>Выберете пункт...</option>
                             <option value="25000">Сайт-Визитка</option>
                             <option value="175000">Промо-Сайт</option>
                             <option value="180000">Интернет-Магазин</option>
@@ -141,7 +157,7 @@
                     <div class="design">
                         <h4>Дизайн</h4>
                         <select onchange="calc()" name="list2" id="design">
-                            <option selected disabled>Выберете пункт...</option>
+                            <option value="0" selected disabled>Выберете пункт...</option>
                             <option value="5000">Легкий Дизайн</option>
                             <option value="15000">Сложный Дизайн</option>
                             <option value="0">Свое(Вы предоставляете дизайн)</option>
@@ -150,7 +166,7 @@
                     <div class="adaptability">
                         <h4>Адаптивность</h4>
                         <select onchange="calc()" name="list3" id="adaptability">
-                            <option selected disabled>Выберете пункт...</option>
+                            <option value="0" selected disabled>Выберете пункт...</option>
                             <option value="10000">Только для Mobile</option>
                             <option value="10000">Только для PC</option>
                             <option value="25000">Для PC и Mobile</option>
@@ -279,9 +295,9 @@
         <script src="js/jquery.magnific-popup.min.js"></script> 
         <script src="https://aishek.github.io/jquery-animateNumber/javascripts/jquery.animateNumber.js"></script>
         <script src="https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/fotorama.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="js/homework.js"></script>
         <script src="js/price.js"></script>
     </body>

@@ -1,6 +1,4 @@
 // AOS Animation
-AOS.init();
-
 AOS.init({
     // Глобальные настройки:
     disable: false, // принимают следующие значения: 'phone', 'tablet', 'mobile', boolean, expression или function
@@ -34,11 +32,19 @@ $(document).ready(function(){
     elements.each((i,el) => {
         observer.observe(el);
     });
-    
-    // Слайдер Slick
-    $('.single-item').slick({
-        adaptiveHeight: true,
-    });
+
+    //slider
+    var swiper = new Swiper(".mySwiper", {
+        loop:true,
+        observer: true,
+        observeParents: true,
+        parallax:true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+      });
+
 });
 
 function onEntry(entry) {
@@ -55,16 +61,6 @@ $('a[href^="#"]').click(function(){
     $('html, body').animate({scrollTop: $(valHref).offset().top + "px"});
 });
 
-// Бегающие цифры
-var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
-$(".lines").each(function() {
-	var tcount = $(this).data("count");
-	$(this).animateNumber({ number: tcount,
-		easing: 'easeInQuad',
-		numberStep: comma_separator_number_step},
-    2000);
-});
-
 // Модальное окно по таймеру
 setTimeout(function(){
   $.colorbox({
@@ -74,3 +70,18 @@ setTimeout(function(){
     height: 150
   });
 }, 30000);
+
+// Бегающие цифры
+$(window).scroll(function(){
+var offset = $('.price').offset();
+    if ($(this).scrollTop() > offset.top) {
+        var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+        $(".lines").each(function() {
+            var tcount = $(this).data("count");
+            $(this).animateNumber({ number: tcount,
+                easing: 'easeInQuad',
+                numberStep: comma_separator_number_step},
+            2000);
+        });
+    }
+});

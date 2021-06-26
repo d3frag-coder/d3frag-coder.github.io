@@ -5,15 +5,15 @@ function calc() {
     var result = document.getElementById("result");
     var resultdeadline = document.getElementById("resultdeadline");
     
-    var type_site_price = 0;
-    var design_price = 0;
-    var adaptability_price = 0
-    var price = 0;
-    var deadline = 0;
+    let type_site_price = 0;
+    let design_price = 0;
+    let adaptability_price = 0;
+    let price = 0;
+    let deadline = 0;
     
-    type_site_price += parseInt(type_site.options[type_site.selectedIndex].value);
-    design_price += parseInt(design.options[design.selectedIndex].value);
-    adaptability_price += parseInt(adaptability.options[adaptability.selectedIndex].value);
+    type_site_price += Number.parseInt(type_site.options[type_site.selectedIndex].value);
+    design_price += Number.parseInt(design.options[design.selectedIndex].value);
+    adaptability_price += Number.parseInt(adaptability.options[adaptability.selectedIndex].value);
     
     if(type_site_price == "25000") {
         deadline += 5;
@@ -36,9 +36,9 @@ function calc() {
     } else {
         deadline += 3;
     }
-    
+
     price = type_site_price + design_price + adaptability_price;
-        
+
     result.innerHTML = price;
     resultdeadline.innerHTML = deadline;
 }
